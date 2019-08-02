@@ -1,0 +1,54 @@
+﻿@model ProyectoDefenitivo2.Models.Accesorios
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Accesorios</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoAccesorio)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TipoAccesorio.Nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cantidad)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cantidad)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Talla)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Talla)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Valor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Valor)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Color)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Color)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.AccesoriosID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
